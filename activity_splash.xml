@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <!-- Top Space -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <!-- FarmLink Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:src="@drawable/logo"
+        android:contentDescription="FarmLink Logo" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="FarmLink"
+        android:textColor="#176B2C"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:fontFamily="sans" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/txtTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Direct Farm-to-Consumer"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/txtTagline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Marketplace"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:gravity="center" />
+
+    <!-- Take Remaining Space -->
+    <!--    <Space-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1" />-->
+
+    <!-- Farm Illustration -->
+    <ImageView
+        android:id="@+id/farmImage"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/splash_button"
+        android:scaleType="fitXY"
+        android:layout_marginTop="100dp"
+        android:contentDescription="Farm Illustration"/>
+
+
+    <!-- Small Description -->
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Fresh from Farms to Your Home"
+        android:textColor="#176B2C"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <!-- Loading -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="18dp"
+        android:indeterminateTint="#2E8B32" />
+
+</LinearLayout>
