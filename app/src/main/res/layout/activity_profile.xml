@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7FAF6">
+
+    <!-- Header -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/arrow_back"
+            android:padding="4dp"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Profile"
+            android:textColor="#174D24"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginEnd="28dp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- Profile Photo -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:src="@drawable/img_8"
+                    android:padding="0dp"
+                    android:background="#DFF0DF"
+                    android:scaleType="fitXY"
+                    android:contentDescription="Profile Photo" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ramesh Farmer"
+                    android:textColor="#174D24"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/txtFarmerId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farmer ID: FL1001"
+                    android:textColor="#777777"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+
+            <!-- Edit Profile -->
+
+            <TextView
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Edit Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#21862F"
+                android:layout_marginTop="22dp" />
+
+
+            <!-- Personal Information -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textColor="#222222"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="12dp" />
+
+
+            <!-- Mobile -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textColor="#777777"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 9876543210"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp" />
+
+            </LinearLayout>
+
+
+            <!-- Email -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:textColor="#777777"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ramesh@gmail.com"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp" />
+
+            </LinearLayout>
+
+
+            <!-- Address -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Address"
+                    android:textColor="#777777"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Village Road, Amravati, Maharashtra"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp" />
+
+            </LinearLayout>
+
+
+            <!-- Account Options -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textColor="#222222"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp" />
+
+
+            <TextView
+                android:id="@+id/btnMyProducts"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="My Products"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:background="#FFFFFF" />
+
+
+            <TextView
+                android:id="@+id/btnOrderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Order History"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="2dp" />
+
+
+            <!-- Logout -->
+
+            <TextView
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Logout"
+                android:textColor="#D32F2F"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

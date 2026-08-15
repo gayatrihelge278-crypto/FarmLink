@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow_back"
+        android:contentDescription="Back"
+        android:padding="5dp" />
+
+    <!-- Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="I am a..."
+        android:textColor="#145A24"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Choose your role to continue"
+        android:textColor="#555555"
+        android:textSize="14sp" />
+
+
+    <!-- Farmer Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFarmer"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="35dp"
+        app:cardBackgroundColor="#E8F4D9"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/ivFarmer"
+                android:layout_width="105dp"
+                android:layout_height="115dp"
+                android:src="@drawable/farmer1"
+                android:scaleType="fitCenter"
+                android:contentDescription="Farmer" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farmer"
+                    android:textColor="#222222"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Sell your products"
+                    android:textColor="#555555"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Manage orders"
+                    android:textColor="#555555"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- Consumer Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardConsumer"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#FFF1C9"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/ivConsumer"
+                android:layout_width="105dp"
+                android:layout_height="115dp"
+                android:src="@drawable/consumer1"
+                android:scaleType="fitCenter"
+                android:contentDescription="Consumer" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consumer"
+                    android:textColor="#222222"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Buy fresh products"
+                    android:textColor="#555555"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Track orders"
+                    android:textColor="#555555"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
